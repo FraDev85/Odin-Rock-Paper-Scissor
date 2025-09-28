@@ -142,7 +142,7 @@ h3 {
     font-size: 1rem;
     color: black;
     position: relative;
-    top: -80px;
-    left: 15px;
+    top: 0;
+    left: 10px;
   }
 }
