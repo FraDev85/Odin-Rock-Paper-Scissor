@@ -52,17 +52,24 @@ h1 {
   max-width: 35%;
   min-width: 0;
   flex-wrap: nowrap;
-  width: 30%;
-}
-
-.humanChoice :nth-child(even) {
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 25%;
 }
 
 .btn {
   display: flex;
   justify-content: center;
+}
+
+.btn button {
+  background-color: lightblue;
+  border-radius: 5px;
+  color: #333;
+  box-shadow: #333;
+  padding: 0.6rem;
+}
+
+.btn :nth-child(even) {
+  margin: 0 8px;
 }
 
 .computerChoice {
@@ -93,4 +100,39 @@ h3 {
   text-align: center;
   color: teal;
   font-size: 1.3rem;
+}
+/*media query*/
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .game {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .humanChoice {
+    width: 35%;
+    margin-bottom: 30px;
+  }
+
+  .computerChoice {
+    width: 35%;
+    margin-right: 13px;
+  }
+
+  .btn {
+    font-size: 0.3rem;
+    width: 100%;
+  }
+
+  .btn :nth-child(even) {
+    margin: 0 4px;
+  }
+
+  .btn button {
+    padding: 2px;
+  }
 }
