@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: yellowgreen;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.humanChoice {
+  border: 1px solid black;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-color: #fff;
+  border-radius: 5px;
+  max-width: 35%;
+  min-width: 0;
+  flex-wrap: nowrap;
+}
+
+.humanChoice :nth-child(even) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.computerChoice {
+  border: 1px solid black;
+  height: 35%;
+  display: block;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.computerChoice p {
+  text-align: center;
+  line-height: 12;
+  font-size: 1.4rem;
+  color: red;
+}
+
+.blockChoice {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.blockChoice h3 {
+  text-align: center;
+  transform: translate(150%, 550%);
+  font-size: 1.3rem;
+}
