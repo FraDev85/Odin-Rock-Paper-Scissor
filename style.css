@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: yellowgreen;
-  height: 100vh;
 }
 
 h1 {
@@ -39,6 +39,7 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  gap: 10px;
 }
 
 .humanChoice {
@@ -49,7 +50,6 @@ h1 {
   justify-content: space-between;
   background-color: #fff;
   border-radius: 5px;
-  max-width: 35%;
   min-width: 0;
   flex-wrap: nowrap;
   width: 25%;
@@ -81,7 +81,6 @@ h1 {
   justify-content: space-between;
   background-color: #fff;
   border-radius: 5px;
-  margin-left: 20px;
 }
 
 .computerChoice p {
@@ -111,21 +110,17 @@ h3 {
   .game {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 
-  .humanChoice {
-    width: 35%;
-    margin-bottom: 30px;
-  }
-
+  .humanChoice,
   .computerChoice {
-    width: 35%;
-    margin-right: 13px;
+    width: 50%;
   }
 
   .btn {
     font-size: 0.3rem;
-    width: 100%;
+    width: auto;
   }
 
   .btn :nth-child(even) {
@@ -142,7 +137,22 @@ h3 {
     font-size: 1rem;
     color: black;
     position: relative;
-    top: 0;
-    left: 10px;
+    top: -35px;
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .game {
+    width: 100%;
+  }
+
+  .humanChoice,
+  .computerChoice {
+    width: 100%;
+  }
+
+  .partial {
+    top: -45px;
   }
 }
