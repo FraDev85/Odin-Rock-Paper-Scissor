@@ -135,4 +135,14 @@ h3 {
   .btn button {
     padding: 2px;
   }
+
+  .partial {
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    color: black;
+    position: relative;
+    top: -80px;
+    left: 15px;
+  }
 }
