@@ -81,12 +81,13 @@ h1 {
 .blockChoice {
   align-self: start;
   display: flex;
-  flex-direction: column;
   width: 100%;
 }
 
 .blockChoice h3 {
   text-align: center;
-  transform: translate(150%, 550%);
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  position: relative;
+  top: 150px;
+  left: 80px;
 }
